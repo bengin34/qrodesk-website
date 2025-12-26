@@ -24,7 +24,9 @@
       display:flex;align-items:center;justify-content:center;
       color:#0B1B23;font-weight:800;font-size:26px;letter-spacing:-1px;
       box-shadow:0 12px 28px rgba(0,0,0,.28);
+      overflow:hidden;
     }
+    .logo img{width:68px;height:68px;object-fit:contain;display:block}
     h1{font-size:30px;margin:8px 0 6px;color:var(--primary)}
     h2{font-size:18px;margin:18px 0 6px;color:var(--text)}
     p{margin:8px 0;color:var(--muted)}
@@ -48,7 +50,7 @@
   </style>
 </head><body>
   <div class="wrap">
-    <div class="logo" aria-hidden="true">BM</div>
+    <div class="logo"><img src="/mamio.png" alt="Baby MilkyWay logo"></div>
     <h1>Baby MilkyWay</h1>
     <p class="lead">A simple, offline baby feeding tracker designed for breastfeeding moms.</p>
     <p class="lead">Track feeding sessions with one tap, even at 3:00 AM, using just one hand.</p>
