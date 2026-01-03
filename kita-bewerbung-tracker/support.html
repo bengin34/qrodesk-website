@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Support – Kita Bewerbung Tracker</title>
+  <meta name="description" content="Support, FAQ und Kontakt für Kita Bewerbung Tracker." />
+  <style>
+    :root{
+      --bg:#0b1020; --card:#111a33; --text:#e8ecff; --muted:#b8c0ff;
+      --line:rgba(255,255,255,.10); --accent:#7aa2ff; --accent2:#7dffcf;
+      --shadow:0 10px 30px rgba(0,0,0,.35); --radius:16px; --max:1000px;
+      --font:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:
+      radial-gradient(1100px 500px at 20% 0%, rgba(122,162,255,.18), transparent 60%),
+      radial-gradient(900px 500px at 80% 10%, rgba(125,255,207,.12), transparent 55%),
+      var(--bg);
+      color:var(--text);font-family:var(--font);line-height:1.6}
+    a{color:inherit}
+    .container{max-width:var(--max);margin:0 auto;padding:0 18px}
+    .nav{position:sticky;top:0;z-index:20;backdrop-filter:saturate(140%) blur(10px);
+      background:rgba(11,16,32,.65);border-bottom:1px solid var(--line)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:var(--shadow)}
+    .brand span{font-weight:800}
+    .nav-links{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .nav-links a{text-decoration:none;font-size:14px;color:var(--muted);padding:8px 10px;border-radius:10px;border:1px solid transparent}
+    .nav-links a:hover{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.04)}
+    .cta{font-weight:800;font-size:14px;padding:10px 12px;border-radius:12px;border:0;
+      background:linear-gradient(135deg,rgba(122,162,255,.95),rgba(125,255,207,.85));color:#081028;box-shadow:var(--shadow);text-decoration:none}
+    .card{background:rgba(17,26,51,.72);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .pad{padding:18px}
+    h1{font-size:28px;margin:18px 0 8px}
+    h2{font-size:18px;margin:18px 0 8px}
+    p,li{color:var(--muted);font-size:14px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width: 900px){ .grid{grid-template-columns:1fr} }
+    details{border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03);padding:12px}
+    summary{cursor:pointer;font-weight:800}
+    details p{margin:10px 0 0}
+    .footer{border-top:1px solid var(--line);margin-top:28px;padding:18px 0 30px;color:var(--muted);font-size:13px}
+    .field{display:flex;flex-direction:column;gap:6px;margin:10px 0}
+    label{font-size:13px;color:var(--muted)}
+    input,textarea{
+      background:rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:10px 12px;
+      color:var(--text);
+      font:inherit;
+      outline:none;
+    }
+    textarea{min-height:110px;resize:vertical}
+    .hint{font-size:13px;color:var(--muted)}
+    .btn{
+      display:inline-block;
+      font-weight:800;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      text-decoration:none;
+    }
+    .btn:hover{background:rgba(255,255,255,.07)}
+    code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:8px;border:1px solid var(--line)}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="brand" href="/kita-bewerbung-tracker/">
+          <div class="logo" aria-hidden="true"></div>
+          <span>Kita Bewerbung Tracker</span>
+        </a>
+        <nav class="nav-links" aria-label="Seiten">
+          <a href="/kita-bewerbung-tracker/privacy.html">Datenschutz</a>
+          <a href="/kita-bewerbung-tracker/terms.html">Nutzungsbedingungen</a>
+          <a href="/kita-bewerbung-tracker/impressum.html">Impressum</a>
+          <a class="cta" href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:20px 18px 0">
+    <section class="card pad" id="download">
+      <h1>Support</h1>
+      <p>
+        Hier findest du Antworten auf häufige Fragen und Möglichkeiten, uns zu kontaktieren.
+      </p>
+
+      <h2>Download / Links</h2>
+      <p class="hint">
+        Trage hier deine Store-Links ein (oder entferne den Block, bis die App live ist).
+      </p>
+      <ul>
+        <li>iOS: <code>[App Store Link]</code></li>
+        <li>Android: <code>[Google Play Link]</code></li>
+      </ul>
+    </section>
+
+    <section class="grid" style="margin-top:12px" aria-label="FAQ und Kontakt">
+      <section class="card pad">
+        <h2>FAQ</h2>
+
+        <details>
+          <summary>Ich bekomme keine Erinnerungen</summary>
+          <p>
+            Prüfe die Benachrichtigungseinstellungen deines Geräts sowie die App-Berechtigungen.
+            Auf iOS: Einstellungen → Mitteilungen. Auf Android: App-Info → Benachrichtigungen.
+          </p>
+        </details>
+
+        <details>
+          <summary>Wie exportiere ich meine Daten?</summary>
+          <p>
+            Falls Export in deiner Version verfügbar ist, findest du ihn typischerweise in den Einstellungen
+            oder über das Menü in der Kita-Liste (z. B. „Export“ / „Teilen“).
+          </p>
+        </details>
+
+        <details>
+          <summary>Ich habe einen Bug gefunden</summary>
+          <p>
+            Bitte sende uns: Gerät/OS-Version, App-Version, Schritte zum Reproduzieren, und wenn möglich einen Screenshot.
+          </p>
+        </details>
+
+        <details>
+          <summary>Wie kann ich Feedback geben?</summary>
+          <p>
+            Schreib uns über das Kontaktformular oder per E-Mail. Feature-Wünsche sind willkommen.
+          </p>
+        </details>
+      </section>
+
+      <section class="card pad" id="kontakt">
+        <h2>Kontakt</h2>
+        <p class="hint">
+          Dieses Formular nutzt <code>mailto:</code> (keine Server-Verarbeitung). Du kannst auch direkt mailen:
+          <code>support@qrodesk.com</code>
+        </p>
+
+        <form onsubmit="return openMail(event)">
+          <div class="field">
+            <label for="subject">Betreff</label>
+            <input id="subject" name="subject" placeholder="z. B. Erinnerungen funktionieren nicht" required />
+          </div>
+          <div class="field">
+            <label for="email">Deine E-Mail (optional)</label>
+            <input id="email" name="email" placeholder="name@example.com" />
+          </div>
+          <div class="field">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" placeholder="Beschreibe kurz dein Anliegen…" required></textarea>
+          </div>
+
+          <button class="btn" type="submit">E-Mail öffnen</button>
+          <p class="hint" style="margin-top:10px">
+            Datenschutz: Inhalte werden erst versendet, wenn du in deinem Mailprogramm bestätigst.
+          </p>
+        </form>
+      </section>
+    </section>
+
+    <footer class="footer">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center">
+        <div>© <span id="y"></span> Kita Bewerbung Tracker</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="/kita-bewerbung-tracker/">Start</a>
+          <a href="/kita-bewerbung-tracker/privacy.html">Datenschutz</a>
+          <a href="/kita-bewerbung-tracker/terms.html">Nutzungsbedingungen</a>
+          <a href="/kita-bewerbung-tracker/impressum.html">Impressum</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    function openMail(e){
+      e.preventDefault();
+      const subject = document.getElementById("subject").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const support = "support@qrodesk.com";
+      const body = [
+        message,
+        "",
+        "---",
+        "Kontakt-E-Mail (optional): " + (email || "-"),
+        "App: Kita Bewerbung Tracker"
+      ].join("\n");
+
+      const href = "mailto:" + encodeURIComponent(support) +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+      window.location.href = href;
+      return false;
+    }
+  </script>
+</body>
+</html>

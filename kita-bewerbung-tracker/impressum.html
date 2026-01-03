@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Impressum – Kita Bewerbung Tracker</title>
+  <meta name="description" content="Impressum / Anbieterkennzeichnung." />
+  <style>
+    :root{
+      --bg:#0b1020; --card:#111a33; --text:#e8ecff; --muted:#b8c0ff;
+      --line:rgba(255,255,255,.10); --accent:#7aa2ff; --accent2:#7dffcf;
+      --shadow:0 10px 30px rgba(0,0,0,.35); --radius:16px; --max:900px;
+      --font:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:
+      radial-gradient(1100px 500px at 20% 0%, rgba(122,162,255,.18), transparent 60%),
+      radial-gradient(900px 500px at 80% 10%, rgba(125,255,207,.12), transparent 55%),
+      var(--bg);
+      color:var(--text);font-family:var(--font);line-height:1.6}
+    a{color:inherit}
+    .container{max-width:var(--max);margin:0 auto;padding:0 18px}
+    .nav{position:sticky;top:0;z-index:20;backdrop-filter:saturate(140%) blur(10px);
+      background:rgba(11,16,32,.65);border-bottom:1px solid var(--line)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:var(--shadow)}
+    .brand span{font-weight:800}
+    .nav-links{display:flex;gap:10px;flex-wrap:wrap}
+    .nav-links a{text-decoration:none;font-size:14px;color:var(--muted);padding:8px 10px;border-radius:10px;border:1px solid transparent}
+    .nav-links a:hover{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.04)}
+    .card{background:rgba(17,26,51,.72);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .pad{padding:18px}
+    h1{font-size:28px;margin:18px 0 8px}
+    h2{font-size:18px;margin:18px 0 8px}
+    p,li{color:var(--muted);font-size:14px}
+    .footer{border-top:1px solid var(--line);margin-top:28px;padding:18px 0 30px;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="brand" href="/kita-bewerbung-tracker/">
+          <div class="logo" aria-hidden="true"></div>
+          <span>Kita Bewerbung Tracker</span>
+        </a>
+        <nav class="nav-links" aria-label="Seiten">
+          <a href="/kita-bewerbung-tracker/support.html">Support</a>
+          <a href="/kita-bewerbung-tracker/privacy.html">Datenschutz</a>
+          <a href="/kita-bewerbung-tracker/terms.html">Nutzungsbedingungen</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" style="padding:20px 18px 0">
+    <section class="card pad">
+      <h1>Impressum</h1>
+
+      <h2>Anbieter</h2>
+      <p>
+        <b>Mendi Tekstilwaren / Dilara Demir Caglar</b><br>
+        Fauststraße 44a<br>
+        81827 München<br>
+        Deutschland
+      </p>
+
+      <h2>Kontakt</h2>
+      <p>
+        E-Mail: support@qrodesk.com<br>
+        Telefon: +49017641590534
+      </p>
+
+      <h2>Haftungshinweis</h2>
+      <p>
+        Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für externe Links.
+        Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+      </p>
+
+      <p style="color:var(--muted);font-size:13px">
+        Hinweis: Dies ist eine Vorlage. Impressumspflichten können je nach Konstellation (privat/unternehmerisch,
+        Plattform, Monetarisierung) variieren.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center">
+        <div>© <span id="y"></span> Kita Bewerbung Tracker</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="/kita-bewerbung-tracker/">Start</a>
+          <a href="/kita-bewerbung-tracker/privacy.html">Datenschutz</a>
+          <a href="/kita-bewerbung-tracker/terms.html">Nutzungsbedingungen</a>
+          <a href="/kita-bewerbung-tracker/support.html">Support</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

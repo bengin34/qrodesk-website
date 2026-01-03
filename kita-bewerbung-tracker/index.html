@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kita Bewerbung Tracker – Kita-CRM</title>
+  <link rel="canonical" href="https://qrodesk.com/kita-bewerbung-tracker/" />
+  <meta name="description" content="Kita-Bewerbungen einfach verfolgen: Kontakte, Status, Notizen und Nachfassen-Erinnerungen – ohne Excel." />
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#111a33;
+      --text:#e8ecff;
+      --muted:#b8c0ff;
+      --line:rgba(255,255,255,.10);
+      --accent:#7aa2ff;
+      --accent2:#7dffcf;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --max: 1100px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:
+      radial-gradient(1100px 500px at 20% 0%, rgba(122,162,255,.18), transparent 60%),
+      radial-gradient(900px 500px at 80% 10%, rgba(125,255,207,.12), transparent 55%),
+      var(--bg);
+      color:var(--text);font-family:var(--font);line-height:1.55}
+    a{color:inherit}
+    .container{max-width:var(--max);margin:0 auto;padding:0 18px}
+    .nav{
+      position:sticky;top:0;z-index:20;
+      backdrop-filter:saturate(140%) blur(10px);
+      background:rgba(11,16,32,.65);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .logo{
+      width:34px;height:34px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      box-shadow:var(--shadow);
+    }
+    .brand span{font-weight:800;letter-spacing:.2px}
+    .nav-links{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    .nav-links a{
+      text-decoration:none;font-size:14px;color:var(--muted);
+      padding:8px 10px;border-radius:10px;border:1px solid transparent
+    }
+    .nav-links a:hover{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.04)}
+    .cta{
+      text-decoration:none;font-weight:700;font-size:14px;
+      padding:10px 12px;border-radius:12px;
+      background:linear-gradient(135deg,rgba(122,162,255,.95),rgba(125,255,207,.85));
+      color:#081028;
+      box-shadow:var(--shadow);
+      border:0;
+    }
+    .hero{padding:56px 0 28px}
+    .grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
+    @media (max-width: 900px){ .grid{grid-template-columns:1fr} .hero{padding-top:34px} }
+    .h1{font-size:44px;line-height:1.08;margin:0 0 12px;font-weight:900;letter-spacing:-.6px}
+    @media (max-width: 520px){ .h1{font-size:34px} }
+    .sub{font-size:18px;color:var(--muted);margin:0 0 18px;max-width:60ch}
+    .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 24px}
+    .pill{
+      font-size:13px;color:var(--muted);
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      padding:7px 10px;border-radius:999px
+    }
+    .card{
+      background:rgba(17,26,51,.72);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .card-pad{padding:18px}
+    .kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .kpi{padding:14px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.03)}
+    .kpi b{display:block;font-size:18px}
+    .kpi span{color:var(--muted);font-size:13px}
+    .section{padding:18px 0 10px}
+    .section h2{font-size:22px;margin:0 0 10px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    @media (max-width: 900px){ .features{grid-template-columns:1fr} }
+    .feature{padding:16px}
+    .feature h3{margin:0 0 6px;font-size:16px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+    .faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width: 900px){ .faq{grid-template-columns:1fr} }
+    details{border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03);padding:12px}
+    summary{cursor:pointer;font-weight:700}
+    details p{margin:10px 0 0;color:var(--muted);font-size:14px}
+    .footer{
+      border-top:1px solid var(--line);
+      margin-top:28px;padding:18px 0 30px;color:var(--muted);font-size:13px
+    }
+    .footer a{color:var(--muted);text-decoration:none;border-bottom:1px dotted rgba(184,192,255,.45)}
+    .footer a:hover{color:var(--text)}
+    .note{font-size:13px;color:var(--muted);margin-top:10px}
+    .btn-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    .ghost{
+      text-decoration:none;font-weight:700;font-size:14px;
+      padding:10px 12px;border-radius:12px;
+      border:1px solid var(--line);
+      color:var(--text);
+      background:rgba(255,255,255,.03);
+    }
+    .ghost:hover{background:rgba(255,255,255,.06)}
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="brand" href="/kita-bewerbung-tracker/" aria-label="Kita Bewerbung Tracker Home">
+          <div class="logo" aria-hidden="true"></div>
+          <span>Kita Bewerbung Tracker</span>
+        </a>
+        <nav class="nav-links" aria-label="Seiten">
+          <a href="/kita-bewerbung-tracker/support.html">Support</a>
+          <a href="/kita-bewerbung-tracker/privacy.html">Datenschutz</a>
+          <a href="/kita-bewerbung-tracker/terms.html">Nutzungsbedingungen</a>
+          <a href="/kita-bewerbung-tracker/impressum.html">Impressum</a>
+          <a class="cta" href="/kita-bewerbung-tracker/support.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="grid">
+          <div>
+            <h1 class="h1">Kita-Bewerbungen ohne Excel verfolgen.</h1>
+            <p class="sub">
+              Verwalte Kitas, Kontakte, Status und Notizen an einem Ort. Mit Erinnerungen fürs Nachfassen und
+              professionellen E-Mail-Vorlagen – damit du den Überblick behältst.
+            </p>
+
+            <div class="btn-row">
+              <a class="cta" href="/kita-bewerbung-tracker/support.html#download">Download / Links</a>
+              <a class="ghost" href="/kita-bewerbung-tracker/privacy.html">Datenschutz ansehen</a>
+            </div>
+
+            <div class="pill-row" aria-label="Highlights">
+              <span class="pill">Kontakte &amp; Status</span>
+              <span class="pill">Nachfassen-Erinnerungen</span>
+              <span class="pill">E-Mail-Vorlagen (DE)</span>
+              <span class="pill">Offline / gerätebasiert</span>
+            </div>
+
+            <p class="note">
+              Hinweis: Diese Website ist eine Marketing-Seite. App-Funktionen können sich je nach Version ändern.
+            </p>
+          </div>
+
+          <aside class="card card-pad" aria-label="Kurzüberblick">
+            <h2 style="margin:0 0 12px;font-size:18px;">In 30 Sekunden verstanden</h2>
+            <div class="kpis">
+              <div class="kpi">
+                <b>Tracken</b>
+                <span>Kita-Liste, Status, letzte Aktion</span>
+              </div>
+              <div class="kpi">
+                <b>Erinnern</b>
+                <span>Nachfassen nach X Tagen/Wochen</span>
+              </div>
+              <div class="kpi">
+                <b>Dokumentieren</b>
+                <span>Notizen zu Telefonaten &amp; Mails</span>
+              </div>
+              <div class="kpi">
+                <b>Kommunizieren</b>
+                <span>Vorlagen für Anfragen</span>
+              </div>
+            </div>
+            <div style="margin-top:14px;border-top:1px solid var(--line);padding-top:14px;color:var(--muted);font-size:13px">
+              Für Eltern, die mehrere Kitas parallel kontaktieren und Fristen/Antworten sauber nachhalten möchten.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Was du bekommst</h2>
+        <div class="features">
+          <div class="card feature">
+            <h3>Übersichtliches Dashboard</h3>
+            <p>Auf einen Blick: offen, beantwortet, abgelehnt – und wo du nachfassen solltest.</p>
+          </div>
+          <div class="card feature">
+            <h3>Kita-Profile</h3>
+            <p>Name, Telefon, E-Mail, Ansprechpartner und Notizen pro Einrichtung – alles strukturiert.</p>
+          </div>
+          <div class="card feature">
+            <h3>Nachfassen-Logik</h3>
+            <p>Erinnerungen basierend auf deiner letzten Aktion (Mail/Anruf/Besuch) – kein Rätselraten mehr.</p>
+          </div>
+          <div class="card feature">
+            <h3>Professionelle Vorlagen</h3>
+            <p>Deutschsprachige Texte für Platzanfrage, Follow-up und Rückfragen – schnell anpassbar.</p>
+          </div>
+          <div class="card feature">
+            <h3>Offline zuerst</h3>
+            <p>Für den Start: Daten lokal auf deinem Gerät (sofern du es so konfigurierst). Kein Konto nötig.</p>
+          </div>
+          <div class="card feature">
+            <h3>Export / Kopieren</h3>
+            <p>Wichtige Infos einfach kopieren oder als Text exportieren (je nach App-Version).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="FAQ">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>Speichert die App meine Daten in der Cloud?</summary>
+            <p>
+              Standardmäßig ist die App auf lokale Datenspeicherung ausgelegt. Falls du später Cloud-Sync aktivierst,
+              wird dies transparent in der App kommuniziert.
+            </p>
+          </details>
+          <details>
+            <summary>Gibt es eine Pro-Version?</summary>
+            <p>
+              Je nach Release kann es kostenlose und kostenpflichtige Funktionen geben (z. B. unbegrenzte Einträge,
+              erweiterte Erinnerungen, Export). Details findest du in der App/Store-Beschreibung.
+            </p>
+          </details>
+          <details>
+            <summary>Kann ich E-Mail-Vorlagen personalisieren?</summary>
+            <p>
+              Ja. Vorlagen sind als Ausgangspunkt gedacht und können angepasst werden (Name, Datum, Betreuungsbeginn,
+              gewünschtes Modell etc.).
+            </p>
+          </details>
+          <details>
+            <summary>Wie bekomme ich Support?</summary>
+            <p>
+              Nutze die Support-Seite: Dort findest du Kontaktmöglichkeiten und häufige Lösungen.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center">
+          <div>© <span id="y"></span> Kita Bewerbung Tracker</div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a href="/kita-bewerbung-tracker/privacy.html">Datenschutz</a>
+            <a href="/kita-bewerbung-tracker/terms.html">Nutzungsbedingungen</a>
+            <a href="/kita-bewerbung-tracker/support.html">Support</a>
+            <a href="/kita-bewerbung-tracker/impressum.html">Impressum</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
