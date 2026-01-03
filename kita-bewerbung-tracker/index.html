@@ -60,7 +60,14 @@
     .hero{padding:56px 0 28px}
     .grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
     @media (max-width: 900px){ .grid{grid-template-columns:1fr} .hero{padding-top:34px} }
-    .h1{font-size:44px;line-height:1.08;margin:0 0 12px;font-weight:900;letter-spacing:-.6px}
+    .h1{
+      font-size:44px;line-height:1.08;margin:0 0 12px;font-weight:900;letter-spacing:-.6px;
+      display:flex;align-items:center;gap:12px;flex-wrap:wrap
+    }
+    .title-logo{
+      width:44px;height:44px;border-radius:12px;object-fit:contain;flex:0 0 auto;
+      box-shadow:var(--shadow)
+    }
     @media (max-width: 520px){ .h1{font-size:34px} }
     .sub{font-size:18px;color:var(--muted);margin:0 0 18px;max-width:60ch}
     .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 24px}
@@ -136,7 +143,10 @@
       <div class="container">
         <div class="grid">
           <div>
-            <h1 class="h1">Kita-Bewerbungen ohne Excel verfolgen.</h1>
+            <h1 class="h1">
+              <img class="title-logo" src="/kita.png" alt="Kita">
+              Kita-Bewerbungen ohne Excel verfolgen.
+            </h1>
             <p class="sub">
               Verwalte Kitas, Kontakte, Status und Notizen an einem Ort. Mit Erinnerungen fürs Nachfassen und
               professionellen E-Mail-Vorlagen – damit du den Überblick behältst.
