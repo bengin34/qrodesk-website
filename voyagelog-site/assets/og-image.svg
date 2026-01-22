@@ -1,0 +1,13 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="og" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F8B78" />
+      <stop offset="100%" stop-color="#E0822E" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#F7F3EE" />
+  <rect x="60" y="60" width="1080" height="510" rx="48" fill="url(#og)" fill-opacity="0.18" stroke="#E6DED4" stroke-width="6" />
+  <text x="120" y="240" font-size="64" font-family="Trebuchet MS, Arial, sans-serif" fill="#1F1B16">VoyageLog</text>
+  <text x="120" y="320" font-size="36" font-family="Trebuchet MS, Arial, sans-serif" fill="#5F5A52">Your private travel history</text>
+  <text x="120" y="380" font-size="24" font-family="Trebuchet MS, Arial, sans-serif" fill="#5F5A52">Offline-first - Searchable - Exportable</text>
+</svg>
