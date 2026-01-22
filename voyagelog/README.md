@@ -13,7 +13,7 @@ python3 -m http.server 8000
 Then open:
 
 ```
-http://localhost:8000/voyagelog-site/
+http://localhost:8000/voyagelog/
 ```
 
 You can also open `index.html` directly in a browser for a quick preview.
