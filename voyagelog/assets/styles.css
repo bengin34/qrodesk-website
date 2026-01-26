@@ -361,7 +361,7 @@ button:focus-visible {
 
 .screen {
   min-width: 100%;
-  height: min(70vh, 520px);
+  height: 700px;
   padding: var(--space-2);
   display: grid;
   place-items: center;
