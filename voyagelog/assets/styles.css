@@ -350,6 +350,8 @@ button:focus-visible {
   border: 1px solid var(--border);
   background: var(--surface);
   box-shadow: var(--shadow);
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .screens-track {
@@ -359,7 +361,7 @@ button:focus-visible {
 
 .screen {
   min-width: 100%;
-  padding: var(--space-3);
+  padding: var(--space-2);
   display: grid;
   place-items: center;
 }
