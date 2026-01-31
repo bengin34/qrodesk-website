@@ -244,6 +244,13 @@ button:focus-visible {
   color: #0b1714;
 }
 
+.store-badge {
+  height: 24px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
 .btn-secondary {
   background: var(--surface);
   color: var(--ink);
