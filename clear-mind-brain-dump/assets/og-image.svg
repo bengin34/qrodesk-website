@@ -1,0 +1,25 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F2EE" />
+      <stop offset="1" stop-color="#ECE8E3" />
+    </linearGradient>
+    <linearGradient id="accent" x1="220" y1="180" x2="560" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F6D62" />
+      <stop offset="1" stop-color="#C7A06B" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="48" fill="url(#bg)" />
+  <circle cx="210" cy="180" r="90" fill="url(#accent)" opacity="0.9" />
+  <circle cx="1040" cy="120" r="140" fill="#2F6D62" opacity="0.12" />
+  <circle cx="980" cy="520" r="180" fill="#C7A06B" opacity="0.16" />
+  <g fill="#1F1A16">
+    <text x="140" y="320" font-family="Sora, sans-serif" font-size="70" font-weight="700">clearMind</text>
+    <text x="140" y="390" font-family="Sora, sans-serif" font-size="32" font-weight="400" fill="#6A655F">
+      60-second brain dump for fast relief
+    </text>
+    <text x="140" y="445" font-family="IBM Plex Mono, monospace" font-size="18" letter-spacing="4" fill="#335C73">
+      OPEN · DUMP · RELEASE · EXIT
+    </text>
+  </g>
+</svg>
