@@ -1,0 +1,15 @@
+<svg width="600" height="1200" viewBox="0 0 600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E6B8F" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#0F8B78" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="1200" rx="80" fill="#F7F3EE" />
+  <rect x="28" y="40" width="544" height="1120" rx="56" fill="url(#bg2)" stroke="#E6DED4" stroke-width="6" />
+  <rect x="90" y="160" width="420" height="36" rx="18" fill="#2E6B8F" fill-opacity="0.2" />
+  <rect x="90" y="230" width="300" height="22" rx="11" fill="#2E6B8F" fill-opacity="0.18" />
+  <rect x="90" y="300" width="420" height="640" rx="28" fill="#FFFFFF" stroke="#E6DED4" stroke-width="4" />
+  <text x="300" y="620" text-anchor="middle" font-size="28" font-family="Trebuchet MS, Arial, sans-serif" fill="#5F5A52">Places & notes</text>
+  <text x="300" y="660" text-anchor="middle" font-size="18" font-family="Trebuchet MS, Arial, sans-serif" fill="#5F5A52">Screenshot placeholder</text>
+</svg>
