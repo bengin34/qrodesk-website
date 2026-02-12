@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Deep Work Challenge Tracker - 1 session per day</title>
+    <link
+      rel="canonical"
+      href="https://qrodesk.com/deep-work-challange-tracker/"
+    />
+    <meta
+      name="description"
+      content="Deep Work Challenge Tracker helps you complete at least one deep work session every day with streak, routine, and a 30-day challenge."
+    />
+    <meta name="theme-color" content="#f4f2ee" />
+
+    <meta
+      property="og:title"
+      content="Deep Work Challenge Tracker - 1 session per day"
+    />
+    <meta
+      property="og:description"
+      content="A simple system for consistency: one daily session, streak, routine reminders, and 30-day challenge progress."
+    />
+    <meta
+      property="og:image"
+      content="https://qrodesk.com/deep-work-challange-tracker/assets/og-image.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://qrodesk.com/deep-work-challange-tracker/"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=Sora:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-open="false">
+      <div class="container nav">
+        <a class="brand" href="/deep-work-challange-tracker/">
+          <span class="brand-mark" aria-hidden="true">DW</span>
+          <span>Deep Work Challenge Tracker</span>
+        </a>
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav" class="nav-links" aria-label="Primary">
+          <a href="/deep-work-challange-tracker/support.html">Support</a>
+          <a href="/deep-work-challange-tracker/privacy.html">Privacy</a>
+          <a href="/deep-work-challange-tracker/terms.html">Terms</a>
+          <a href="/deep-work-challange-tracker/impressum.html">Impressum</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow reveal" style="--delay: 0s">Consistency app</div>
+            <h1 class="reveal" style="--delay: 0.05s">
+              Deep Work Challenge Tracker<br />One session. Every day.
+            </h1>
+            <p class="reveal" style="--delay: 0.1s">
+              Deep Work Challenge: complete at least one deep work session every
+              day. The app combines streak + routine + 30-day challenge as one
+              system.
+            </p>
+            <div class="badge-row reveal" style="--delay: 0.15s">
+              <span class="badge">Preset sessions: 30/60/90</span>
+              <span class="badge">Streak engine</span>
+              <span class="badge">30-day heatmap</span>
+              <span class="badge">Routine reminders</span>
+            </div>
+            <div class="hero-actions reveal" style="--delay: 0.2s">
+              <a
+                class="btn btn-primary"
+                href="mailto:support@qrodesk.com?subject=Deep%20Work%20Challenge%20Tracker"
+              >
+                Contact support
+              </a>
+              <a class="btn btn-secondary" href="#mvp">See MVP scope</a>
+            </div>
+          </div>
+          <div class="hero-card reveal" style="--delay: 0.25s">
+            <h2>Problem this solves</h2>
+            <ul>
+              <li>The "not starting" cycle.</li>
+              <li>Inconsistent daily execution.</li>
+              <li>"I will start tomorrow" behavior loop.</li>
+              <li>Identity-based consistency, not just distraction blocking.</li>
+            </ul>
+            <div class="timer">
+              <span>Rule: 1 session/day</span>
+              <div class="timer-bar" aria-hidden="true">
+                <span class="timer-fill"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="personas">
+        <div class="container">
+          <h2 class="reveal" style="--delay: 0s">Clear personas</h2>
+          <p class="reveal" style="--delay: 0.05s">
+            Built for users who need a daily execution system, not a complex
+            productivity suite.
+          </p>
+          <div class="split">
+            <article class="list-card reveal" style="--delay: 0.1s">
+              <h3>Remote developer</h3>
+              <ul>
+                <li>Needs one deep focus block per day.</li>
+                <li>Uses consistency for sprint and feature delivery.</li>
+              </ul>
+            </article>
+            <article class="list-card reveal" style="--delay: 0.15s">
+              <h3>Student</h3>
+              <ul>
+                <li>Exam periods need sustainable pace.</li>
+                <li>"Even 1 session" rule lowers overwhelm.</li>
+              </ul>
+            </article>
+            <article class="list-card reveal" style="--delay: 0.2s">
+              <h3>Side-project builder</h3>
+              <ul>
+                <li>Builds momentum with one evening session.</li>
+                <li>Progress stays visible through streak + challenge.</li>
+              </ul>
+            </article>
+            <article class="list-card reveal" style="--delay: 0.25s">
+              <h3>ADHD-leaning user</h3>
+              <ul>
+                <li>Simple rule instead of heavy planning.</li>
+                <li>Streak-at-risk warnings trigger action.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="mvp">
+        <div class="container">
+          <h2 class="reveal" style="--delay: 0s">MVP scope (7-day launch)</h2>
+          <p class="reveal" style="--delay: 0.05s">
+            Single goal: tie "1 session per day" to a streak and keep the user
+            going for 30 consecutive days.
+          </p>
+          <div class="screen-grid">
+            <article class="screen-card reveal" style="--delay: 0.1s">
+              <span class="screen-tag">Feature 01</span>
+              <h3>Session completion</h3>
+              <p>Preset duration picker: 30 / 60 / 90.</p>
+              <ul>
+                <li>Start session -> choose duration -> mark done.</li>
+                <li>Multiple sessions/day accumulate minutes.</li>
+              </ul>
+            </article>
+            <article class="screen-card reveal" style="--delay: 0.15s">
+              <span class="screen-tag">Feature 02</span>
+              <h3>Streak engine</h3>
+              <p>Single source of truth from daily records.</p>
+              <ul>
+                <li>Daily completion exists -> streak increments.</li>
+                <li>Missed day resets unless freeze saves it.</li>
+              </ul>
+            </article>
+            <article class="screen-card reveal" style="--delay: 0.2s">
+              <span class="screen-tag">Feature 03</span>
+              <h3>Heatmap</h3>
+              <p>GitHub-style last 30 days with today status.</p>
+              <ul>
+                <li>Completed days clearly marked.</li>
+                <li>Frozen days get their own state.</li>
+              </ul>
+            </article>
+            <article class="screen-card reveal" style="--delay: 0.25s">
+              <span class="screen-tag">Feature 04</span>
+              <h3>Routine mode</h3>
+              <p>Set preferred time and receive local reminder.</p>
+              <ul>
+                <li>One-tap actions: Done / Skip.</li>
+                <li>Quick completion updates record immediately.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="screen-grid secondary">
+            <article class="screen-card reveal" style="--delay: 0.3s">
+              <span class="screen-tag">Feature 05</span>
+              <h3>30-day challenge</h3>
+              <p>Track Day 1-30 progress with X/30 completed.</p>
+              <ul>
+                <li>Daily marker view for challenge status.</li>
+                <li>Completion state shown at finish.</li>
+              </ul>
+            </article>
+            <article class="screen-card reveal" style="--delay: 0.35s">
+              <span class="screen-tag">Feature 06</span>
+              <h3>Basic stats</h3>
+              <p>Weekly total and longest streak.</p>
+              <ul>
+                <li>Minutes/hours summary only.</li>
+                <li>No complex graphing in MVP.</li>
+              </ul>
+            </article>
+            <article class="screen-card reveal" style="--delay: 0.4s">
+              <span class="screen-tag">Feature 07</span>
+              <h3>Paywall + freeze</h3>
+              <p>Free users get core streak and heatmap.</p>
+              <ul>
+                <li>Pro unlocks freeze, advanced stats, widget, custom length.</li>
+                <li>Unlimited challenges for Pro users.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="core">
+        <div class="container">
+          <h2 class="reveal" style="--delay: 0s">Core logic (backend-free)</h2>
+          <div class="split">
+            <article class="list-card reveal" style="--delay: 0.05s">
+              <h3>Source of truth</h3>
+              <ul>
+                <li>`DailyRecord(date)` with completed, minutes, freezeUsed.</li>
+                <li>`UserPlan` with `isPro` and `freezeBalance`.</li>
+                <li>`Routine` with `timeOfDay` and enabled state.</li>
+              </ul>
+            </article>
+            <article class="list-card reveal" style="--delay: 0.1s">
+              <h3>Streak computation</h3>
+              <ul>
+                <li>Streak is derived from record chain.</li>
+                <li>Do not store streak as one mutable number.</li>
+                <li>Show "streak at risk" when day is nearly over.</li>
+              </ul>
+            </article>
+            <article class="list-card reveal" style="--delay: 0.15s">
+              <h3>Out of scope in MVP</h3>
+              <ul>
+                <li>No social features or leaderboard.</li>
+                <li>No distraction blocker in MVP.</li>
+                <li>No multi-device sync in v1.</li>
+                <li>No detailed journaling.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="architecture">
+        <div class="container">
+          <h2 class="reveal" style="--delay: 0s">UX architecture</h2>
+          <p class="reveal" style="--delay: 0.05s">
+            Three-tab system with one global call-to-action: "Start session".
+          </p>
+          <div class="steps">
+            <article class="step reveal" style="--delay: 0.1s">
+              <span>Tab 01</span>
+              <h3>Streak</h3>
+              <p>Large streak number, today status, and 30-day heatmap.</p>
+            </article>
+            <article class="step reveal" style="--delay: 0.15s">
+              <span>Tab 02</span>
+              <h3>Routine</h3>
+              <p>Pick time, get reminder, and one-tap completion.</p>
+            </article>
+            <article class="step reveal" style="--delay: 0.2s">
+              <span>Tab 03</span>
+              <h3>Challenge</h3>
+              <p>30-day progress view with day markers and X/30 status.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="sprint">
+        <div class="container">
+          <h2 class="reveal" style="--delay: 0s">7-day engineering sprint</h2>
+          <p class="reveal" style="--delay: 0.05s">
+            Launch sequence focused on one behavior: complete one session daily.
+          </p>
+          <div class="roadmap">
+            <article class="roadmap-card reveal" style="--delay: 0.1s">
+              <span>Day 1-2</span>
+              <h3>Session + daily record</h3>
+              <p>Implement completion flow and reliable date-based storage.</p>
+            </article>
+            <article class="roadmap-card reveal" style="--delay: 0.15s">
+              <span>Day 3</span>
+              <h3>Streak + heatmap</h3>
+              <p>Derived streak logic, last 30 days view, risk banner.</p>
+            </article>
+            <article class="roadmap-card reveal" style="--delay: 0.2s">
+              <span>Day 4</span>
+              <h3>Routine mode</h3>
+              <p>Time picker, local notifications, quick done action.</p>
+            </article>
+            <article class="roadmap-card reveal" style="--delay: 0.25s">
+              <span>Day 5</span>
+              <h3>Challenge mode</h3>
+              <p>Day counter, X/30 progress, completion state.</p>
+            </article>
+            <article class="roadmap-card reveal" style="--delay: 0.3s">
+              <span>Day 6</span>
+              <h3>Simple analytics</h3>
+              <p>Weekly totals, longest streak, one-tap distraction tags.</p>
+            </article>
+            <article class="roadmap-card reveal" style="--delay: 0.35s">
+              <span>Day 7</span>
+              <h3>Paywall + Pro gating</h3>
+              <p>IAP, restore purchases, freeze behavior, pro feature gates.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="roadmap">
+        <div class="container">
+          <h2 class="reveal" style="--delay: 0s">4-week roadmap after MVP</h2>
+          <div class="roadmap">
+            <article class="roadmap-card reveal" style="--delay: 0.05s">
+              <span>Week 1</span>
+              <h3>Retention fixes</h3>
+              <p>Onboarding A/B, identity copy, stronger streak-risk pushes.</p>
+            </article>
+            <article class="roadmap-card reveal" style="--delay: 0.1s">
+              <span>Week 2</span>
+              <h3>Viral hooks</h3>
+              <p>Day X templates and heatmap share image export.</p>
+            </article>
+            <article class="roadmap-card reveal" style="--delay: 0.15s">
+              <span>Week 3</span>
+              <h3>Light sync</h3>
+              <p>Optional iCloud/Google backup without full auth complexity.</p>
+            </article>
+            <article class="roadmap-card reveal" style="--delay: 0.2s">
+              <span>Week 4</span>
+              <h3>ASO and pricing tests</h3>
+              <p>Keyword iterations and trial-length measurement (3 vs 7 days).</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="risks">
+        <div class="container">
+          <h2 class="reveal" style="--delay: 0s">Risks and release checklist</h2>
+          <div class="split">
+            <article class="list-card reveal" style="--delay: 0.05s">
+              <h3>Risks</h3>
+              <ul>
+                <li>Market is crowded: messaging must stay identity-first.</li>
+                <li>Notification reliability can affect retention.</li>
+                <li>Freeze may feel like cheating if framed incorrectly.</li>
+                <li>No backend means device-switch data loss risk.</li>
+              </ul>
+            </article>
+            <article class="list-card reveal" style="--delay: 0.1s">
+              <h3>Release checklist</h3>
+              <ul>
+                <li>3-screen onboarding: rule, preset, routine.</li>
+                <li>Crash-free + timezone testing before launch.</li>
+                <li>Paywall copy focused on streak protection.</li>
+                <li>Restore purchases verified.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <h2 class="reveal" style="--delay: 0s">FAQ</h2>
+          <div class="faq">
+            <details class="reveal" style="--delay: 0.05s">
+              <summary>What is the core rule?</summary>
+              <p>Complete at least one deep work session every day.</p>
+            </details>
+            <details class="reveal" style="--delay: 0.1s">
+              <summary>Do I need an account to use MVP?</summary>
+              <p>No. MVP can run backend-free with local storage.</p>
+            </details>
+            <details class="reveal" style="--delay: 0.15s">
+              <summary>What is free vs Pro?</summary>
+              <p>
+                Free includes streak and basic heatmap. Pro unlocks freeze,
+                advanced stats, widget, custom duration, and unlimited
+                challenges.
+              </p>
+            </details>
+            <details class="reveal" style="--delay: 0.2s">
+              <summary>What happens if I miss a day?</summary>
+              <p>Streak resets unless a freeze is available and applied.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Deep Work Challenge Tracker</strong><br />
+          Contact: <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>
+        </div>
+        <div class="footer-links">
+          <a href="/deep-work-challange-tracker/privacy.html">Privacy</a>
+          <a href="/deep-work-challange-tracker/terms.html">Terms</a>
+          <a href="/deep-work-challange-tracker/support.html">Support</a>
+          <a href="/deep-work-challange-tracker/impressum.html">Impressum</a>
+        </div>
+        <div>&copy; <span data-year></span> Deep Work Challenge Tracker</div>
+      </div>
+    </footer>
+
+    <script src="assets/site.js" defer></script>
+  </body>
+</html>

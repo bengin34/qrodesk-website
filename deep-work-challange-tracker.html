@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Deep Work Challenge Tracker</title>
+
+    <link
+      rel="canonical"
+      href="https://qrodesk.com/deep-work-challange-tracker/"
+    />
+    <meta
+      name="description"
+      content="Deep Work Challenge Tracker: complete one deep work session every day for 30 days."
+    />
+    <meta name="theme-color" content="#0b1b23" />
+
+    <style>
+      :root {
+        --bg: #0b1b23;
+        --surface: rgba(13, 30, 38, 0.78);
+        --text: #f8fbff;
+        --muted: #b6c7d1;
+        --primary: #a6ecff;
+        --accent: #ffd9a8;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: radial-gradient(
+            70% 60% at 20% 10%,
+            rgba(166, 236, 255, 0.14),
+            transparent 60%
+          ),
+          radial-gradient(
+            60% 50% at 80% 0%,
+            rgba(255, 217, 168, 0.12),
+            transparent 65%
+          ),
+          var(--bg);
+        color: var(--text);
+        font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto;
+      }
+      .wrap {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px;
+        text-align: center;
+      }
+      .logo {
+        width: 76px;
+        height: 76px;
+        margin: 6px auto 12px;
+        border-radius: 20px;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0b1b23;
+        font-weight: 800;
+        font-size: 24px;
+        letter-spacing: -0.5px;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+      }
+      h1 {
+        font-size: 31px;
+        margin: 8px 0 6px;
+        color: var(--primary);
+      }
+      h2 {
+        font-size: 18px;
+        margin: 18px 0 6px;
+        color: var(--text);
+      }
+      p {
+        margin: 8px 0;
+        color: var(--muted);
+      }
+      .lead {
+        color: var(--text);
+        font-size: 17px;
+      }
+      .card {
+        background: var(--surface);
+        border: 1px solid rgba(166, 236, 255, 0.15);
+        border-radius: 18px;
+        padding: 22px;
+        margin: 22px auto;
+        max-width: 740px;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+        text-align: left;
+      }
+      .feature-list {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+      }
+      .feature-list li {
+        margin: 8px 0;
+        color: var(--text);
+      }
+      .links {
+        margin-top: 10px;
+      }
+      .links a {
+        color: var(--primary);
+        text-decoration: none;
+        margin: 0 8px;
+        font-weight: 600;
+      }
+      footer {
+        margin-top: 32px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="logo">DW</div>
+      <h1>Deep Work Challenge Tracker</h1>
+      <p class="lead">
+        Complete one deep work session every day. Build consistency in 30 days.
+      </p>
+
+      <div class="card">
+        <h2>What this product does</h2>
+        <ul class="feature-list">
+          <li>Tracks daily completion with 30/60/90 minute session presets.</li>
+          <li>Runs a derived streak engine from daily records.</li>
+          <li>Shows a 30-day heatmap and challenge progress.</li>
+          <li>Adds routine reminders with one-tap Done/Skip actions.</li>
+          <li>Supports freeze and Pro-gated advanced features.</li>
+        </ul>
+
+        <h2>MVP principle</h2>
+        <p>
+          Not a distraction blocker. A consistency system: one rule, one daily
+          action, one visible chain.
+        </p>
+
+        <h2>Product page</h2>
+        <p>
+          Full breakdown of MVP scope, data model, sprint plan, and roadmap:
+          <a href="/deep-work-challange-tracker/"
+            >/deep-work-challange-tracker/</a
+          >
+        </p>
+      </div>
+
+      <p class="links">
+        <a href="/deep-work-challange-tracker/">Home</a> /
+        <a href="/deep-work-challange-tracker/privacy.html">Privacy</a> /
+        <a href="/deep-work-challange-tracker/terms.html">Terms</a> /
+        <a href="/deep-work-challange-tracker/support.html">Support</a> /
+        <a href="/deep-work-challange-tracker/impressum.html">Impressum</a>
+      </p>
+      <p>
+        Questions? Email
+        <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>
+      </p>
+      <footer>&copy; <span id="y"></span> Deep Work Challenge Tracker</footer>
+    </div>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
