@@ -1,0 +1,32 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="36" fill="#FFF7EF"/>
+  <rect x="36" y="36" width="1128" height="558" rx="32" fill="url(#bg)"/>
+  <rect x="82" y="92" width="128" height="128" rx="28" fill="url(#mark)"/>
+  <path d="M119 134H156C184 134 204 151 204 177C204 203 184 220 156 220H119V134ZM150 194C162 194 170 187 170 177C170 167 162 160 150 160H145V194H150Z" fill="white"/>
+  <text x="248" y="148" fill="#2B2238" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="800" letter-spacing="0.18em">BERUFSDEUTSCH</text>
+  <text x="82" y="300" fill="#2B2238" font-family="Space Grotesk, Arial, sans-serif" font-size="72" font-weight="700">Learn German for your</text>
+  <text x="82" y="380" fill="#2B2238" font-family="Space Grotesk, Arial, sans-serif" font-size="72" font-weight="700">actual job.</text>
+  <text x="82" y="456" fill="#6D627D" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="600">Job-specific reading, vocabulary cards, and realistic</text>
+  <text x="82" y="494" fill="#6D627D" font-family="Manrope, Arial, sans-serif" font-size="28" font-weight="600">dialogues for immigrants building a career in Germany.</text>
+  <rect x="794" y="130" width="292" height="370" rx="36" fill="#FFFFFF" fill-opacity="0.72" stroke="#D8E2F0" stroke-width="2"/>
+  <rect x="826" y="166" width="128" height="28" rx="14" fill="#FFFFFF"/>
+  <text x="844" y="185" fill="#4B67F2" font-family="Manrope, Arial, sans-serif" font-size="14" font-weight="800">SOFTWARE DEVELOPER</text>
+  <rect x="826" y="216" width="228" height="88" rx="20" fill="#F4F8FD"/>
+  <text x="846" y="248" fill="#2B2238" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="800">Read Jira tickets,</text>
+  <text x="846" y="274" fill="#2B2238" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="800">bug reports, and</text>
+  <text x="846" y="300" fill="#2B2238" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="800">sprint updates.</text>
+  <rect x="826" y="326" width="228" height="62" rx="20" fill="#E9F7F5"/>
+  <text x="846" y="365" fill="#2B2238" font-family="Manrope, Arial, sans-serif" font-size="18" font-weight="800">Vocabulary + dialogue practice</text>
+  <rect x="826" y="410" width="148" height="24" rx="12" fill="#FF7A59" fill-opacity="0.18"/>
+  <text x="846" y="427" fill="#4B67F2" font-family="Manrope, Arial, sans-serif" font-size="14" font-weight="800">B1-B2 LEARNERS</text>
+  <defs>
+    <linearGradient id="bg" x1="90" y1="66" x2="1094" y2="592" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8F0"/>
+      <stop offset="1" stop-color="#FFEEDC"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="82" y1="92" x2="210" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7A59"/>
+      <stop offset="1" stop-color="#31C7A6"/>
+    </linearGradient>
+  </defs>
+</svg>
