@@ -1,6 +1,6 @@
-# Offly marketing site
+# Tinvi marketing site
 
-Static HTML/CSS landing pages for Offly — the private baby journal and offline
+Static HTML/CSS landing pages for Tinvi — the private baby journal and offline
 memory vault.
 
 ## Local preview
@@ -14,7 +14,7 @@ python3 -m http.server 8000
 Then open:
 
 ```
-http://localhost:8000/offly/
+http://localhost:8000/Tinvi/
 ```
 
 You can also open `index.html` directly in a browser.
