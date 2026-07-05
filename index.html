@@ -24,6 +24,10 @@
   .logo{width:88px;height:88px;margin:8px auto 16px;object-fit:contain}
   h1{font-size:28px;margin:6px 0 6px;color:var(--primary)}p{margin:8px 0;color:var(--muted)}
   .card{background:var(--surface);border-radius:16px;padding:18px;margin:22px auto;max-width:620px}
+  .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:22px auto;max-width:620px;text-align:left}
+  .product{display:block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px;color:var(--text);text-decoration:none}
+  .product b{color:var(--primary)}
+  .product span{display:block;margin-top:6px;color:var(--muted);font-size:14px}
   .links a{color:var(--primary);text-decoration:none;margin:0 8px}
   footer{margin-top:34px;font-size:14px;color:var(--muted)}
   /* badge buttons */
@@ -50,6 +54,17 @@
           <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
         </a>
       </div>
+    </div>
+
+    <div class="products" aria-label="More from QroDesk">
+      <a class="product" href="/workenglish/">
+        <b>WorkEnglish</b>
+        <span>Job-specific English practice for real workplace communication.</span>
+      </a>
+      <a class="product" href="/berufsdeutsch/">
+        <b>BerufsDeutsch</b>
+        <span>Profession-based German for work, reading, vocabulary and dialogues.</span>
+      </a>
     </div>
 
     <p class="links">
