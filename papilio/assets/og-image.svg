@@ -1,0 +1,31 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a1413" />
+      <stop offset="1" stop-color="#0f2a26" />
+    </linearGradient>
+    <linearGradient id="chip" x1="260" y1="220" x2="940" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4fd1c0" />
+      <stop offset="1" stop-color="#5fa8d3" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <rect x="150" y="150" width="900" height="330" rx="34" fill="#132422" stroke="#274641" stroke-width="2" />
+  <rect x="220" y="220" width="200" height="46" rx="16" fill="#16302c" />
+  <text x="240" y="250" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700" fill="#4fd1c0">Papilio</text>
+
+  <text x="220" y="316" font-family="Space Grotesk, Arial, sans-serif" font-size="52" font-weight="700" fill="#f4f8f7">
+    A private diary for Hashimoto's.
+  </text>
+
+  <text x="220" y="372" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="500" fill="#a3b8b4">
+    Symptoms, labs and doses on one timeline — never interpreted
+  </text>
+
+  <rect x="220" y="406" width="480" height="54" rx="22" fill="url(#chip)" />
+  <text x="252" y="442" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#0a1a18">
+    A record, not an opinion
+  </text>
+</svg>
