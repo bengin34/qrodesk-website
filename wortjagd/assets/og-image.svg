@@ -1,0 +1,31 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f0e18" />
+      <stop offset="1" stop-color="#1c1026" />
+    </linearGradient>
+    <linearGradient id="chip" x1="220" y1="406" x2="760" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff5a9e" />
+      <stop offset="1" stop-color="#ffb63a" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <rect x="150" y="150" width="900" height="330" rx="34" fill="#191827" stroke="#2c2a44" stroke-width="2" />
+  <rect x="220" y="220" width="170" height="46" rx="16" fill="#3b1d2e" />
+  <text x="240" y="251" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700" fill="#ff5a9e">WortJagd</text>
+
+  <text x="220" y="318" font-family="Space Grotesk, Arial, sans-serif" font-size="54" font-weight="700" fill="#f5f4fa">
+    One German puzzle a day.
+  </text>
+
+  <text x="220" y="372" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500" fill="#aba8c4">
+    Matching, hangman &amp; arcade modes · A1–B2 · 10 languages
+  </text>
+
+  <rect x="220" y="406" width="480" height="54" rx="22" fill="url(#chip)" />
+  <text x="252" y="442" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#2a0716">
+    der · die · das — under three minutes
+  </text>
+</svg>
