@@ -65,7 +65,7 @@
         <ul>
           <li>No account, no sign-up, no name, email address or phone number in the app.</li>
           <li>Anonymous usage analytics (PostHog, EU) to improve the app.</li>
-          <li>Ads from Google AdMob for users without WortJagd Pro. Where the law requires it (for example in the EU, EEA, UK and Switzerland), ads are only personalised if you agree in Google's consent form, and you can change that choice in Settings at any time.</li>
+          <li>Ads from Google AdMob for users without WortJagd Pro. On iOS, ads are always non-personalised. On Android, where the law requires it (for example in the EU, EEA, UK and Switzerland), ads are only personalised if you agree in Google's consent form. Wherever the form applies, you can change your choice in Settings at any time.</li>
           <li>No App Tracking Transparency prompt on iOS: the app does not ask to track you, so the iOS advertising identifier (IDFA) is never available to the app or to AdMob.</li>
           <li>Subscriptions are billed by Apple or Google and checked through RevenueCat. We never see your payment details.</li>
         </ul>
@@ -152,7 +152,10 @@
           Tracking Transparency prompt and does not ask for permission to
           track you across other companies' apps and websites. As a result,
           the iOS advertising identifier (IDFA) is not available to the app or
-          to AdMob on iOS.
+          to AdMob on iOS. In addition, on iOS the app asks Google for
+          <strong>non-personalised ads only</strong> on every ad request,
+          whatever you choose in the consent form below: ads on iOS are not
+          personalised from your data or your activity in other apps.
         </p>
         <p>
           <strong>Consent (Google UMP).</strong> On first launch, the app uses
@@ -163,9 +166,10 @@
           your device and use your data for personalised ads.
         </p>
         <ul>
-          <li>If you agree, ads may be personalised based on data Google holds about you.</li>
+          <li>On iOS, every ad is non-personalised, whether or not you agree. There the form only decides whether Google may store and access information on your device (for example for frequency capping, measurement and fraud prevention) and whether ads are requested at all.</li>
+          <li>On Android, if you agree, ads may be personalised based on data Google holds about you.</li>
           <li>If you do not agree, Google serves non-personalised or limited ads, which are based only on context such as the app itself and your approximate location. If your choices do not allow ads to be requested at all, the app shows no ads.</li>
-          <li>Where no consent form is required, Google may serve personalised ads according to its own policies. On Android you can delete or reset your advertising ID in your device settings (Settings → Privacy → Ads, or Google → Ads).</li>
+          <li>Where no consent form is required, ads on iOS are still non-personalised; on Android Google may serve personalised ads according to its own policies. On Android you can delete or reset your advertising ID in your device settings (Settings → Privacy → Ads, or Google → Ads).</li>
         </ul>
         <p>
           <strong>How to change your choice:</strong> open
