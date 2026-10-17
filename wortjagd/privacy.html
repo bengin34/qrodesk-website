@@ -7,7 +7,7 @@
     <link rel="canonical" href="https://qrodesk.com/wortjagd/privacy.html" />
     <meta
       name="description"
-      content="WortJagd privacy policy: no account, your progress stays on your device, anonymous usage analytics, and subscriptions handled by Apple, Google and RevenueCat."
+      content="WortJagd privacy policy: no account, progress stays on your device, anonymous usage analytics, Google AdMob ads with consent choices, and subscriptions handled by Apple, Google and RevenueCat."
     />
     <meta name="theme-color" content="#0f0e18" />
     <link rel="icon" href="/wortjagd/assets/favicon-32.png" sizes="32x32" />
@@ -44,14 +44,14 @@
     <main id="main" class="page">
       <div class="container page-card">
         <h1>Privacy Policy</h1>
-        <p><strong>Last updated:</strong> September 27, 2026</p>
+        <p><strong>Last updated:</strong> October 17, 2026</p>
 
         <p>
-          WortJagd ("WortJagd", "we", "us") is a daily German vocabulary game.
-          It works without an account: your progress, streaks, word list and
-          settings are stored on your device. This policy explains the small
-          amount of data that does leave your device, why, and what you can do
-          about it.
+          WortJagd ("WortJagd", "we", "us") is a daily German vocabulary game
+          for iOS and Android. It works without an account: your progress,
+          streaks, word list and settings are stored on your device. This
+          policy explains which data does leave your device, who receives it,
+          why, and what you can do about it.
         </p>
 
         <h2>Data controller</h2>
@@ -61,11 +61,14 @@
           <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>.
         </p>
 
-        <h2>No account</h2>
-        <p>
-          WortJagd has no sign-up or login. We do not ask for your name, email
-          address, phone number or any other contact details inside the app.
-        </p>
+        <h2>Summary</h2>
+        <ul>
+          <li>No account, no sign-up, no name, email address or phone number in the app.</li>
+          <li>Anonymous usage analytics (PostHog, EU) to improve the app.</li>
+          <li>Ads from Google AdMob for users without WortJagd Pro. On iOS, ads are always non-personalised. On Android, where the law requires it (for example in the EU, EEA, UK and Switzerland), ads are only personalised if you agree in Google's consent form. Wherever the form applies, you can change your choice in Settings at any time.</li>
+          <li>No App Tracking Transparency prompt on iOS: the app does not ask to track you, so the iOS advertising identifier (IDFA) is never available to the app or to AdMob.</li>
+          <li>Subscriptions are billed by Apple or Google and checked through RevenueCat. We never see your payment details.</li>
+        </ul>
 
         <h2>Data stored on your device</h2>
         <table>
@@ -86,7 +89,11 @@
             </tr>
             <tr>
               <td>Settings</td>
-              <td>Sound on or off, reminder hour, light or dark mode.</td>
+              <td>Sound on or off, game format, reminder on or off and its hour.</td>
+            </tr>
+            <tr>
+              <td>Technical identifiers</td>
+              <td>The random analytics identifier, the RevenueCat app user ID and, where applicable, your ad consent choice stored by Google's consent SDK.</td>
             </tr>
           </tbody>
         </table>
@@ -97,81 +104,176 @@
           Google's terms.
         </p>
 
-        <h2>Anonymous usage analytics</h2>
+        <h2>Usage analytics (PostHog)</h2>
         <p>
           To understand which features are used and where the app can be
           improved, WortJagd sends a small, fixed set of usage events to
-          <strong>PostHog</strong>, hosted in the European Union. Examples:
-          the app was opened, a puzzle was started or finished (with score,
-          number of mistakes and duration), the track or profession was
-          changed, the paywall was viewed, a reminder was turned on, or a
-          streak ended.
+          <strong>PostHog</strong>, using PostHog's EU cloud (servers in the
+          European Union). The complete list of events is: app opened,
+          onboarding completed, track or profession changed, daily puzzle
+          started, round completed, puzzle completed, arcade (lane) run
+          started and completed, paywall viewed and dismissed, trial started,
+          purchase, restore attempted, reminder turned on, and streak lost.
         </p>
         <ul>
-          <li>Events are linked to a random identifier generated on your device, not to your name, email or advertising ID.</li>
-          <li>Events do not contain free text, contacts, location or anything you type.</li>
-          <li>PostHog also receives standard technical data such as app version, OS version, device model and, as part of the connection, your IP address.</li>
-          <li>We do not use analytics data for advertising and do not sell it.</li>
+          <li>Events carry only game and app values: for example score, number of mistakes, duration, round, track, profession, game mode and format, whether a result is a new best, which plan was bought, the reminder hour or the length of a lost streak. Every event is tagged with the app name.</li>
+          <li>Events are linked to a random identifier generated on your device by PostHog. It is not linked to your name, email address, the iOS advertising identifier (IDFA) or the Android advertising ID.</li>
+          <li>PostHog's SDK adds standard technical data such as app version and build, operating system and version, device manufacturer and model, screen size, language and time zone. Your IP address is transmitted as part of the connection.</li>
+          <li>Events never contain free text, contacts, photos, precise location or anything you type.</li>
+          <li>Analytics data is not used for advertising and is not sold.</li>
         </ul>
         <p>
           The legal basis is our legitimate interest in maintaining and
-          improving the app (Art. 6(1)(f) GDPR). You may object at any time
-          by contacting us.
+          improving the app (Art. 6(1)(f) GDPR). You may object at any time by
+          contacting us; we will then delete the analytics data linked to your
+          installation.
         </p>
 
-        <h2>Subscriptions and purchases</h2>
+        <h2>Advertising (Google AdMob)</h2>
         <p>
-          WortJagd Pro is sold as an auto-renewing subscription through the
-          App Store (iOS) or Google Play (Android). Payments are processed
-          entirely by Apple or Google; we never see your payment details.
+          Without a WortJagd Pro subscription, the app shows ads provided by
+          <strong>Google AdMob</strong> (Google Ireland Limited / Google LLC): a
+          banner on the play screen and, now and then, a full-screen ad after
+          a finished run. Pro subscribers see no ads, and no ads are requested
+          for them.
         </p>
         <p>
-          To check whether your subscription is active and to restore
-          purchases, the app uses <strong>RevenueCat</strong>. RevenueCat
-          receives an anonymous app user ID, your purchase receipts and
-          subscription status, and basic device information. See
+          To deliver ads, measure them and prevent fraud, the Google Mobile Ads
+          SDK in the app collects and sends to Google:
+        </p>
+        <ul>
+          <li><strong>Device identifiers:</strong> on iOS, the identifier for vendor (IDFV); on Android, the Android advertising ID and app set ID.</li>
+          <li><strong>IP address</strong>, from which Google can estimate an approximate (city or region level) location. The app never asks for or uses precise location.</li>
+          <li><strong>Advertising data:</strong> which ads were requested, shown and tapped.</li>
+          <li><strong>Technical and diagnostic data:</strong> device model, operating system and version, app version, language, and ad performance and crash information.</li>
+        </ul>
+        <p>
+          <strong>iOS and tracking.</strong> WortJagd does not show the App
+          Tracking Transparency prompt and does not ask for permission to
+          track you across other companies' apps and websites. As a result,
+          the iOS advertising identifier (IDFA) is not available to the app or
+          to AdMob on iOS. In addition, on iOS the app asks Google for
+          <strong>non-personalised ads only</strong> on every ad request,
+          whatever you choose in the consent form below: ads on iOS are not
+          personalised from your data or your activity in other apps.
+        </p>
+        <p>
+          <strong>Consent (Google UMP).</strong> On first launch, the app uses
+          Google's User Messaging Platform (UMP) consent form. Google shows it
+          where the law requires consent for ads, for example in the EU, the
+          EEA, the UK and Switzerland. In that form you choose whether Google
+          and its advertising partners may store and access information on
+          your device and use your data for personalised ads.
+        </p>
+        <ul>
+          <li>On iOS, every ad is non-personalised, whether or not you agree. There the form only decides whether Google may store and access information on your device (for example for frequency capping, measurement and fraud prevention) and whether ads are requested at all.</li>
+          <li>On Android, if you agree, ads may be personalised based on data Google holds about you.</li>
+          <li>If you do not agree, Google serves non-personalised or limited ads, which are based only on context such as the app itself and your approximate location. If your choices do not allow ads to be requested at all, the app shows no ads.</li>
+          <li>Where no consent form is required, ads on iOS are still non-personalised; on Android Google may serve personalised ads according to its own policies. On Android you can delete or reset your advertising ID in your device settings (Settings → Privacy → Ads, or Google → Ads).</li>
+        </ul>
+        <p>
+          <strong>How to change your choice:</strong> open
+          <strong>Settings → App → Ad privacy choices</strong> in WortJagd to
+          see Google's consent form again and change or withdraw your consent
+          at any time. This row appears wherever a consent form applies.
+          Withdrawing consent does not affect the lawfulness of processing
+          before the withdrawal.
+        </p>
+        <p>
+          The legal basis for personalised ads and for storing or accessing
+          information on your device for advertising is your consent
+          (Art. 6(1)(a) GDPR and § 25(1) TDDDG). The legal basis for serving
+          non-personalised ads, which finance the free version of the app, is
+          our legitimate interest (Art. 6(1)(f) GDPR). Google acts as an
+          independent controller for some of this processing. See
+          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">how Google uses information from apps that use its services</a>
+          and
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's privacy policy</a>.
+        </p>
+
+        <h2>Subscriptions and purchases (RevenueCat)</h2>
+        <p>
+          WortJagd Pro is sold as an auto-renewing monthly or annual
+          subscription through the App Store (iOS) or Google Play (Android).
+          Payments are processed entirely by Apple or Google; we never see your
+          payment details.
+        </p>
+        <p>
+          To check whether your subscription is active, to show the plans and
+          whether a free trial is available to you, and to restore purchases,
+          the app uses <strong>RevenueCat</strong>. RevenueCat receives a random
+          app user ID created on your device, your purchase receipts and
+          subscription status, and basic device information (such as OS
+          version, app version, language and IP address). The legal basis is
+          the performance of your subscription contract (Art. 6(1)(b) GDPR).
+          See
           <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat's privacy policy</a>.
         </p>
 
         <h2>Reminders</h2>
         <p>
-          If you turn on the daily reminder, it is scheduled as a local
-          notification on your device. No push token is sent to us, and you
-          can turn the reminder off in Settings or in your system settings at
-          any time.
+          If you turn on the daily reminder, the app asks for notification
+          permission and schedules a local notification on your device. There
+          is no push service: no push token or notification data is sent to us
+          or to anyone else. You can turn the reminder off in Settings or in
+          your system settings at any time.
+        </p>
+
+        <h2>Sounds</h2>
+        <p>
+          WortJagd only plays short sound effects while you use it. It does not
+          use the microphone, does not record audio and does not play audio in
+          the background.
         </p>
 
         <h2>Feedback emails</h2>
         <p>
           If you use the feedback button in Settings, your mail app opens a
           message to <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>. It is prefilled with the app version and your
-          platform (iOS or Android) to help us answer. We use what you send only to reply
-          to you, and keep it only as long as needed for that.
+          platform (iOS or Android) to help us answer. We use what you send
+          only to reply to you, and keep it only as long as needed for that.
         </p>
 
         <h2>What WortJagd does not collect</h2>
         <ul>
           <li>No account, name, email address or phone number in the app.</li>
-          <li>No location data.</li>
+          <li>No precise location; no location permission is requested.</li>
           <li>No camera, microphone, contacts or photo access.</li>
-          <li>No advertising SDKs and no cross-app tracking.</li>
+          <li>No iOS advertising identifier (IDFA) and no App Tracking Transparency request.</li>
           <li>No public profiles, feeds or leaderboards.</li>
         </ul>
 
-        <h2>Service providers</h2>
+        <h2>Service providers and recipients</h2>
         <ul>
-          <li><strong>PostHog</strong> (EU cloud) — anonymous usage analytics.</li>
-          <li><strong>RevenueCat</strong> — subscription status and purchase restore.</li>
+          <li><strong>PostHog</strong> (PostHog Inc., EU cloud) — usage analytics, as our processor.</li>
+          <li><strong>Google AdMob</strong> (Google Ireland Limited / Google LLC) — ads and ad consent (UMP), for free users.</li>
+          <li><strong>RevenueCat</strong> (RevenueCat, Inc.) — subscription status, plans and purchase restore, as our processor.</li>
           <li><strong>Apple</strong> and <strong>Google</strong> — app distribution and subscription billing.</li>
+        </ul>
+        <p>
+          Google and RevenueCat may process data in the United States. Such
+          transfers are based on the EU–US Data Privacy Framework or on the
+          European Commission's standard contractual clauses.
+        </p>
+
+        <h2>Retention</h2>
+        <ul>
+          <li><strong>On your device:</strong> until you delete the app (or reset its data).</li>
+          <li><strong>Analytics (PostHog):</strong> kept only as long as needed to understand how the app is used, and deleted afterwards; you can ask us to delete it sooner.</li>
+          <li><strong>Advertising (Google):</strong> retained by Google according to <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener noreferrer">Google's retention policy</a>.</li>
+          <li><strong>Purchases (RevenueCat):</strong> for as long as needed to provide and restore your subscription, and as required by tax and accounting law.</li>
+          <li><strong>Feedback emails:</strong> as long as needed to answer you.</li>
         </ul>
 
         <h2>Your rights</h2>
         <p>
           Under the GDPR and similar laws you may have the right to access,
-          correct, delete or export your personal data, and to object to or
-          restrict processing. Because we have no account for you, please
-          include the details that let us find your data (for example your
-          purchase receipt). Contact <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>. You also have the right to lodge
+          correct, delete or export your personal data, to object to or
+          restrict processing, and to withdraw consent at any time (for ads:
+          Settings → App → Ad privacy choices). Because we have no account for
+          you, please include the details that let us find your data, for
+          example your approximate install date, device model or purchase
+          receipt. Contact <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>. You also have the right to lodge
           a complaint with a data protection supervisory authority.
         </p>
 
