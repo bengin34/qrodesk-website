@@ -1,0 +1,27 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D4E89" />
+      <stop offset="1" stop-color="#12335c" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <rect x="110" y="120" width="980" height="390" rx="34" fill="#E4ECF6" />
+  <rect x="170" y="176" width="430" height="46" rx="16" fill="#1D4E89" />
+  <text x="190" y="207" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Einbürgerungstest 2027 Trainer</text>
+
+  <text x="170" y="296" font-family="Space Grotesk, Arial, sans-serif" font-size="58" font-weight="700" fill="#0b1a2e">
+    Jede Frage verstehen.
+  </text>
+
+  <text x="170" y="352" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="500" fill="#33475f">
+    460 Fragen. Jede Antwort erklärt. 10 Sprachen.
+  </text>
+
+  <rect x="170" y="396" width="520" height="56" rx="22" fill="#1D4E89" />
+  <text x="200" y="433" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="700" fill="#ffffff">
+    Probeprüfung: 33 Fragen, bestanden ab 17
+  </text>
+</svg>
