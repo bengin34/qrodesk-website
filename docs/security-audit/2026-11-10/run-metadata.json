@@ -1,0 +1,14 @@
+{
+  "run_id": "2026-11-10-qrodesk-website",
+  "repo": "qrodesk-website",
+  "target": "repo root",
+  "source_ref": "6fa81b2 (clean worktree)",
+  "profile": "quick",
+  "scope_paths": [
+    "."
+  ],
+  "budget": null,
+  "execution_policy": "sandboxed-source-and-local-only",
+  "run_status": "complete",
+  "notes": "Single-agent source review; no target code executed. Quick-profile partial coverage; no prior ledger exists."
+}

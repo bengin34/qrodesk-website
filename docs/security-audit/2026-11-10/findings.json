@@ -1,0 +1,135 @@
+[
+  {
+    "verdict": "needs_validation",
+    "fingerprint": "hosting-pages-config-headers",
+    "title": "Hosting settings and response headers are not in the repository",
+    "description": "The site is a static GitHub Pages site (CNAME present). HTTPS enforcement, custom-domain verification and response headers are set in the hosting account, not in source, and no CSP meta tag is present in any page.",
+    "claimed_root_cause": "Missing or lax hosting settings could allow downgrade or a hijacked custom domain; absence of CSP is not itself a demonstrated boundary violation.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "CNAME",
+        "line": 1,
+        "scope": "repo root",
+        "description": "Custom domain served by hosting outside source control"
+      }
+    ],
+    "evidence": [
+      {
+        "file": "CNAME",
+        "line": 1,
+        "description": "Custom domain declared; Pages settings not visible in source."
+      },
+      {
+        "file": "pullupmaster/auth.html",
+        "line": 8,
+        "description": "Only per-page hardening found is a referrer meta tag; no CSP meta tags anywhere."
+      }
+    ],
+    "blockers": [
+      "Repository Pages settings (enforce HTTPS, verified domain) are not visible in source",
+      "Response headers cannot be observed without probing the deployed site, which the audit rules forbid"
+    ],
+    "validation_plan": {
+      "deployment": "Owner checks repo Settings > Pages: Enforce HTTPS on, domain verified. Optionally put Cloudflare in front to add CSP and security headers."
+    }
+  },
+  {
+    "verdict": "rejected",
+    "fingerprint": "kita-support-mailto-injection",
+    "title": "mailto link built from form input on the Kita support page",
+    "description": "kita-bewerbung-tracker/support.html builds a mailto: URL from subject, email and message fields.",
+    "claimed_root_cause": "Form input could inject extra mail headers (cc/bcc) or script.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "kita-bewerbung-tracker/support.html",
+        "line": 186,
+        "scope": "openMail",
+        "description": "Reads form values"
+      },
+      {
+        "kind": "sink",
+        "file": "kita-bewerbung-tracker/support.html",
+        "line": 205,
+        "scope": "openMail",
+        "description": "window.location.href set to the mailto URL"
+      }
+    ],
+    "evidence": [
+      {
+        "file": "kita-bewerbung-tracker/support.html",
+        "line": 201,
+        "description": "Recipient is a constant; subject and body go through encodeURIComponent, so CRLF and & cannot add headers."
+      }
+    ],
+    "reason": "The visitor only affects their own mail draft, which they must send themselves. No other principal is affected."
+  },
+  {
+    "verdict": "rejected",
+    "fingerprint": "pullupmaster-auth-deeplink-injection",
+    "title": "Query parameters injected into custom-scheme redirect on auth page",
+    "description": "pullupmaster/auth.html reads token_hash and type from the query string and builds a pullupmaster:// URL that it assigns to window.location.",
+    "claimed_root_cause": "Attacker-controlled query values could alter the redirect target or inject script.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "pullupmaster/auth.html",
+        "line": 103,
+        "scope": "inline script",
+        "description": "URLSearchParams on window.location.search"
+      },
+      {
+        "kind": "propagation",
+        "file": "pullupmaster/auth.html",
+        "line": 113,
+        "scope": "inline script",
+        "description": "Both values pass through encodeURIComponent into a fixed pullupmaster://login prefix"
+      },
+      {
+        "kind": "sink",
+        "file": "pullupmaster/auth.html",
+        "line": 127,
+        "scope": "inline script",
+        "description": "window.location.href set to the fixed-scheme URL"
+      }
+    ],
+    "evidence": [
+      {
+        "file": "pullupmaster/auth.html",
+        "line": 113,
+        "description": "Scheme and host are constant; values are percent-encoded so they cannot add parameters or change the scheme."
+      },
+      {
+        "file": "pullupmaster/auth.html",
+        "line": 8,
+        "description": "no-referrer meta limits token leakage; replaceState at line 124 removes the token from the address bar."
+      }
+    ],
+    "reason": "No boundary crossed: the redirect target is fixed, values are encoded, nothing is written to the DOM as HTML, and the page makes no third-party requests."
+  },
+  {
+    "verdict": "rejected",
+    "fingerprint": "repo-secrets-and-history",
+    "title": "Secrets or private keys committed in the working tree or git history",
+    "description": "Scanned all 107 commits and the working tree for API key, private key, token and credential patterns, and for env, key, keystore and p8/p12 file names.",
+    "claimed_root_cause": "A credential was committed and is retrievable from the public repo.",
+    "trace": [
+      {
+        "kind": "entrypoint",
+        "file": "app-ads.txt",
+        "line": 1,
+        "scope": "repo root",
+        "description": "Only publisher-ID line; public by design for ads.txt"
+      }
+    ],
+    "evidence": [
+      {
+        "file": "app-ads.txt",
+        "line": 1,
+        "description": "AdMob publisher ID is intended to be public; it is not a credential."
+      }
+    ],
+    "reason": "No pattern matches in tree or history; no sensitive file names ever committed. Matches for the words password and token are privacy-policy prose."
+  }
+]
