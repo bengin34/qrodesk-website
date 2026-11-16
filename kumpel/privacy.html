@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gizlilik / Privacy – Kumpel</title>
+    <link rel="canonical" href="https://qrodesk.com/kumpel/privacy.html" />
+    <meta name="description" content="Kumpel gizlilik politikası: klavye eklentisi ekranı okumaz, yapıştırdığın veya yazdığın metin yanıt üretmek için sunucuya ve Anthropic'e gider, Kumpel saklamaz." />
+    <meta name="theme-color" content="#0a0f17" />
+
+    <meta property="og:title" content="Gizlilik / Privacy – Kumpel" />
+    <meta property="og:description" content="Kumpel gizlilik politikası: klavye eklentisi ekranı okumaz, yapıştırdığın veya yazdığın metin yanıt üretmek için sunucuya ve Anthropic'e gider, Kumpel saklamaz." />
+    <meta property="og:url" content="https://qrodesk.com/kumpel/privacy.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">İçeriğe geç</a>
+
+    <header class="site-header" data-open="false">
+      <div class="container nav">
+        <a class="brand" href="/kumpel/support.html">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span>Kumpel</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" class="nav-links" aria-label="Primary">
+          <a href="/kumpel/support.html">Support</a>
+          <a href="/kumpel/privacy.html">Privacy</a>
+          <a href="/impressum.html">Impressum</a>
+          <a href="/">QroDesk</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <div class="container page-card">
+        <h1>Gizlilik Politikası</h1>
+        <p><strong>Güncelleme:</strong> 16 Kasım 2026. Uygulama: Kumpel (com.dilaradev.kumpel).</p>
+        <p><a href="#privacy-en" lang="en">English version below</a></p>
+
+        <h2>Sorumlu</h2>
+        <p>
+          Uygulamanın yayıncısı Mendi Tekstilwaren / Dilara Demir Caglar, Fauststrasse 44a, 81827 München, Almanya. İletişim: <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>.
+        </p>
+
+        <h2>Kumpel nasıl çalışır</h2>
+        <p>
+          Kumpel bir iOS klavye eklentisidir. Ekranını veya mesajlarını okumaz.
+          Yalnızca Kumpel panelinin içine kendin yapıştırdığın veya yazdığın metni işler.
+        </p>
+
+        <h2>Metnin gittiği yer</h2>
+        <p>
+          Yanıt üretmek için bu metin, seçtiğin kişi profili (ad, sen/Sie hitabı, ton)
+          ile birlikte Kumpel sunucusuna (Supabase, AB) ve oradan Anthropic'in Claude API'sine
+          (Claude Haiku modeli) gönderilir. Metin yalnızca yanıtı üretmek için kullanılır.
+          <strong>Kumpel, yazdığın metni ve üretilen yanıtları saklamaz.</strong>
+        </p>
+        <p>
+          Anthropic, API girdi ve çıktılarını varsayılan olarak 30 gün içinde siler; yalnızca
+          kullanım politikası ihlallerinin incelenmesi gerekiyorsa daha uzun tutabilir.
+          Ticari API verileri model eğitiminde kullanılmaz. Ayrıntılar:
+          <a href="https://privacy.claude.com/en/articles/7996866" target="_blank" rel="noopener noreferrer">Anthropic gizlilik sayfası</a>.
+        </p>
+
+        <h2>Sunucuda saklananlar</h2>
+        <ul>
+          <li>Anonim kullanıcı kimliği (Supabase anonim girişi). Aynı iPhone'a yeniden kurulumda kredilerin korunması için bir kopyası iOS Anahtar Zinciri'nde (Keychain) tutulur.</li>
+          <li>Kredi bakiyesi ve günlük istek sayacı.</li>
+          <li>Her istek için: mod, model, süre, hata türü ve yanıtın klavyeye eklenip eklenmediği (“Ekle”). Metin saklanmaz.</li>
+          <li>Olaylar: <code>keyboard_enabled</code>, <code>paywall_shown</code>, <code>purchase</code>.</li>
+          <li>Satın alma kayıtları (ürün kimliği, kredi miktarı).</li>
+        </ul>
+
+        <h2>Yalnızca cihazda saklananlar</h2>
+        <p>
+          Kişi profilleri, ayarlar ve onay zamanı yalnızca cihazında durur; bunları sunucuya yüklemeyiz
+          (bir yanıt istediğinde seçili profil, yukarıda anlatıldığı gibi isteğe eklenir).
+        </p>
+
+        <h2>Satın almalar</h2>
+        <p>
+          Kredi paketleri (tüketilebilir ürünler) Apple tarafından işlenir. Ödeme bilgilerini veya
+          Apple hesabının parolasını görmeyiz. Abonelik yoktur.
+        </p>
+        <p>
+          Satın alımları doğrulamak için RevenueCat (RevenueCat, Inc.) kullanılır. RevenueCat,
+          anonim kullanıcı kimliğini (RevenueCat uygulama kullanıcı kimliği olarak), satın alma
+          makbuzlarını ve teknik cihaz bilgilerini alır. Ad, e-posta veya yazdığın metin gönderilmez.
+          Bkz. <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat gizlilik politikası</a>.
+        </p>
+
+        <h2>Reklam ve takip</h2>
+        <p>Kumpel'de reklam, takip ve analiz SDK'sı yoktur.</p>
+
+        <h2>Çocuklar</h2>
+        <p>
+          Uygulama 13 yaşından küçük çocuklara (veya ülkende geçerli asgari yaşa) yönelik değildir;
+          bilerek çocuklardan veri toplamayız.
+        </p>
+
+        <h2>Verilerini silme</h2>
+        <p>
+          Silme talebi için <a href="mailto:support@qrodesk.com">support@qrodesk.com</a> adresine yaz;
+          varsa Apple sipariş numarasını (satın alma makbuzundan) ekle, kaydı bulabilelim.
+          Uygulamayı silmek sunucudaki kaydı silmez (Keychain kopyası kalır). Talep üzerine hesabı,
+          sayaçları, olayları ve satın alma kayıtlarını sileriz.
+        </p>
+
+        <h2>Hakların</h2>
+        <p>
+          GDPR kapsamında erişim, düzeltme, silme, işlemeyi kısıtlama, veri taşınabilirliği ve itiraz
+          haklarına sahipsin. Ayrıca bir veri koruma denetim makamına, örneğin Bayerisches Landesamt
+          für Datenschutzaufsicht'a (BayLDA) şikâyette bulunabilirsin.
+        </p>
+
+        <h2>İletişim</h2>
+        <div class="notice">
+          <p>Gizlilik soruları: <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>.</p>
+        </div>
+
+        <hr />
+
+        <div lang="en" id="privacy-en">
+          <h2>Privacy Policy</h2>
+          <p><strong>Last updated:</strong> 16 November 2026. App: Kumpel (com.dilaradev.kumpel).</p>
+
+          <h3>Controller</h3>
+          <p>
+            The app is published by Mendi Tekstilwaren / Dilara Demir Caglar, Fauststrasse 44a, 81827 München, Germany. Contact: <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>.
+          </p>
+
+          <h3>How Kumpel works</h3>
+          <p>
+            Kumpel is an iOS keyboard extension. It never reads your screen or your messages.
+            It only processes text you paste or type into Kumpel's own panel.
+          </p>
+
+          <h3>Where your text goes</h3>
+          <p>
+            To generate an answer, that text and the contact profile you chose (name, du/Sie, tone)
+            are sent to Kumpel's server (Supabase, EU) and on to Anthropic's Claude API (Claude Haiku
+            model). The text is used only to generate the answer.
+            <strong>Kumpel does not store the text you enter or the answers generated.</strong>
+          </p>
+          <p>
+            Anthropic deletes API inputs and outputs within 30 days by default, and retains them
+            longer only where needed to review Usage Policy violations. Commercial API data is not
+            used to train models. Details: <a href="https://privacy.claude.com/en/articles/7996866" target="_blank" rel="noopener noreferrer">Anthropic's privacy page</a>.
+          </p>
+
+          <h3>Stored on our server</h3>
+          <ul>
+            <li>An anonymous user ID (Supabase anonymous sign-in). A copy is kept in the iOS Keychain so a reinstall on the same iPhone keeps your credits.</li>
+            <li>Credit balance and a daily request counter.</li>
+            <li>Per request: mode, model, duration, error class, and whether the answer was inserted (“Ekle”). No text is stored.</li>
+            <li>Events: <code>keyboard_enabled</code>, <code>paywall_shown</code>, <code>purchase</code>.</li>
+            <li>Purchase records (product ID, credits).</li>
+          </ul>
+
+          <h3>Stored only on your device</h3>
+          <p>
+            Contact profiles, settings and the consent timestamp stay on your device and are not
+            uploaded (the selected profile is attached to a request when you ask for an answer, as
+            described above).
+          </p>
+
+          <h3>Purchases</h3>
+          <p>
+            Credit packs (consumables) are processed by Apple. We never see your payment details or
+            your Apple account password. There is no subscription.
+          </p>
+          <p>
+            To verify purchases the app uses RevenueCat (RevenueCat, Inc.). RevenueCat receives your
+            anonymous user ID (as the RevenueCat app user ID), purchase receipts and technical device
+            information. No name, email address or entered text is sent. See
+            <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat's privacy policy</a>.
+          </p>
+
+          <h3>Ads and tracking</h3>
+          <p>Kumpel contains no ads, no tracking and no analytics SDK.</p>
+
+          <h3>Children</h3>
+          <p>
+            The app is not directed at children under 13 (or the minimum age required in your
+            country), and we do not knowingly collect data from children.
+          </p>
+
+          <h3>Deleting your data</h3>
+          <p>
+            To request deletion, email <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>
+            and include the Apple order ID from your purchase receipt, if you have one, so we can find
+            the record. Deleting the app does not delete the server record (the Keychain copy
+            remains). On request we delete the account, counters, events and purchase records.
+          </p>
+
+          <h3>Your rights</h3>
+          <p>
+            Under the GDPR you have the right to access, rectification, erasure, restriction of
+            processing, data portability and objection. You can also lodge a complaint with a data
+            protection supervisory authority, for example the Bayerisches Landesamt für
+            Datenschutzaufsicht (BayLDA).
+          </p>
+
+          <h3>Contact</h3>
+          <div class="notice">
+            <p>Privacy questions or data requests: <a href="mailto:support@qrodesk.com">support@qrodesk.com</a>.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <strong>Kumpel</strong><br />
+          Almanca yazışmalar için klavye asistanı.<br />
+          <span lang="en">Keyboard assistant for German messages.</span>
+        </div>
+        <div class="footer-links">
+          <a href="/kumpel/support.html">Support</a>
+          <a href="/kumpel/privacy.html">Privacy</a>
+          <a href="/impressum.html">Impressum</a>
+          <a href="/">QroDesk</a>
+        </div>
+        <div>© <span data-year>2026</span> Kumpel</div>
+      </div>
+    </footer>
+
+    <script src="assets/site.js" defer></script>
+  </body>
+</html>
